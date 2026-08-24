@@ -32,6 +32,8 @@ The simulation uses SPICE directive `.model SparkGap sw(Vt=10k Vh=-2k Ron=0.01 R
 - Ron = 0.01Ohm - resistance in closed state
 - Roff = 10MOhm - resistance in open state
 
+The first spak gap must be triggered by outer voltage to create a domino effect of arks.
+Voltage supply in the form of PULSE(Vin, Von, Tdelay, Trise, Tfall, Ton, Tperiod) is used: `PULSE(0 10 1u 10n 10n 5u 10u)`
 
 ## Circuit Architecture
 
